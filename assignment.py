@@ -42,3 +42,30 @@ print(fundamentals_of_programming.author)
 # Encapsulation
 fundamentals_of_programming.set_pages(3500)
 print(f"Updated pages in the textbook: {fundamentals_of_programming.get_pages()}")
+
+
+
+# Activity 2
+# Base class to inherit from
+class Vehicle:
+    def move(self):
+        print("Normal move")
+
+# Derived classes
+class Car(Vehicle):
+    def move(self):
+        print("Driving 🚗")
+
+class Plane(Vehicle):
+    def move(self):
+        print("Flying ✈️")
+
+class Boat(Vehicle):
+    def move(self):
+        print("Sailing 🚢")
+
+# Polymorphism in action
+vehicles = [Car(), Plane(), Boat()]
+
+for v in vehicles:
+    v.move()  
